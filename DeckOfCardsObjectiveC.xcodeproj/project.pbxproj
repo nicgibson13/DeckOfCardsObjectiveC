@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7CA736F922CBEA4100A61850 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA736F822CBEA4100A61850 /* AppDelegate.m */; };
-		7CA736FC22CBEA4100A61850 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA736FB22CBEA4100A61850 /* ViewController.m */; };
 		7CA736FF22CBEA4100A61850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA736FD22CBEA4100A61850 /* Main.storyboard */; };
 		7CA7370122CBEA4200A61850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7370022CBEA4200A61850 /* Assets.xcassets */; };
 		7CA7370422CBEA4200A61850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7370222CBEA4200A61850 /* LaunchScreen.storyboard */; };
 		7CA7370722CBEA4200A61850 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7370622CBEA4200A61850 /* main.m */; };
+		7CFF66AE22CBEE0D0091F9E9 /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF66AD22CBEE0D0091F9E9 /* DVMCard.m */; };
+		7CFF66B322CBF7500091F9E9 /* DVMCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF66B222CBF7500091F9E9 /* DVMCardController.m */; };
+		7CFF66B922CC1B570091F9E9 /* DVMCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF66B822CC1B570091F9E9 /* DVMCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7CA736F422CBEA4100A61850 /* DeckOfCardsObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCardsObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA736F722CBEA4100A61850 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CA736F822CBEA4100A61850 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7CA736FA22CBEA4100A61850 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7CA736FB22CBEA4100A61850 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7CA736FE22CBEA4100A61850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CA7370022CBEA4200A61850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA7370322CBEA4200A61850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA7370522CBEA4200A61850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CA7370622CBEA4200A61850 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CFF66AC22CBEE0D0091F9E9 /* DVMCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCard.h; sourceTree = "<group>"; };
+		7CFF66AD22CBEE0D0091F9E9 /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
+		7CFF66B122CBF7500091F9E9 /* DVMCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardController.h; sourceTree = "<group>"; };
+		7CFF66B222CBF7500091F9E9 /* DVMCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardController.m; sourceTree = "<group>"; };
+		7CFF66B722CC1B560091F9E9 /* DeckOfCardsObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfCardsObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
+		7CFF66B822CC1B570091F9E9 /* DVMCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				7CA736F622CBEA4100A61850 /* DeckOfCardsObjectiveC */,
-				7CA736F522CBEA4100A61850 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,22 +58,68 @@
 				7CA736F422CBEA4100A61850 /* DeckOfCardsObjectiveC.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7CA736F622CBEA4100A61850 /* DeckOfCardsObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				7CA7370D22CBEAF400A61850 /* Resources */,
+				7CA736F522CBEA4100A61850 /* Products */,
+				7CFF66B022CBF72C0091F9E9 /* Model Controller */,
+				7CFF66AF22CBEE140091F9E9 /* Model */,
+				7CFF66AB22CBEC830091F9E9 /* View Controller */,
+				7CA7370E22CBEB1B00A61850 /* Views */,
+			);
+			path = DeckOfCardsObjectiveC;
+			sourceTree = "<group>";
+		};
+		7CA7370D22CBEAF400A61850 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7CA736F722CBEA4100A61850 /* AppDelegate.h */,
 				7CA736F822CBEA4100A61850 /* AppDelegate.m */,
-				7CA736FA22CBEA4100A61850 /* ViewController.h */,
-				7CA736FB22CBEA4100A61850 /* ViewController.m */,
-				7CA736FD22CBEA4100A61850 /* Main.storyboard */,
 				7CA7370022CBEA4200A61850 /* Assets.xcassets */,
 				7CA7370222CBEA4200A61850 /* LaunchScreen.storyboard */,
 				7CA7370522CBEA4200A61850 /* Info.plist */,
 				7CA7370622CBEA4200A61850 /* main.m */,
 			);
-			path = DeckOfCardsObjectiveC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7CA7370E22CBEB1B00A61850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CA736FD22CBEA4100A61850 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CFF66AB22CBEC830091F9E9 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF66B822CC1B570091F9E9 /* DVMCardViewController.swift */,
+				7CFF66B722CC1B560091F9E9 /* DeckOfCardsObjectiveC-Bridging-Header.h */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		7CFF66AF22CBEE140091F9E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF66AC22CBEE0D0091F9E9 /* DVMCard.h */,
+				7CFF66AD22CBEE0D0091F9E9 /* DVMCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CFF66B022CBF72C0091F9E9 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF66B122CBF7500091F9E9 /* DVMCardController.h */,
+				7CFF66B222CBF7500091F9E9 /* DVMCardController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +153,7 @@
 				TargetAttributes = {
 					7CA736F322CBEA4100A61850 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,9 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA736FC22CBEA4100A61850 /* ViewController.m in Sources */,
+				7CFF66B922CC1B570091F9E9 /* DVMCardViewController.swift in Sources */,
+				7CFF66AE22CBEE0D0091F9E9 /* DVMCard.m in Sources */,
 				7CA7370722CBEA4200A61850 /* main.m in Sources */,
 				7CA736F922CBEA4100A61850 /* AppDelegate.m in Sources */,
+				7CFF66B322CBF7500091F9E9 /* DVMCardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +339,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = DeckOfCardsObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCardsObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.interactivesportsapps.DeckOfCardsObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfCardsObjectiveC/View Controller/DeckOfCardsObjectiveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +360,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = DeckOfCardsObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCardsObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.interactivesportsapps.DeckOfCardsObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfCardsObjectiveC/View Controller/DeckOfCardsObjectiveC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
